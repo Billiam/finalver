@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+{% assign lvl = page.url | append:'X' | split:'/' | size %}
+{% capture base %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+ <head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{base}}css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+</head>
+ <body>
+   {{ content }}
+ </body>
+</html>
