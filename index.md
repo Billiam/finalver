@@ -113,7 +113,7 @@ separated identifiers immediately following the patch or pre-release version.
 Identifiers MUST comprise only ASCII alphanumerics and hyphen [0-9A-Za-z-].
 Identifiers MUST NOT be empty. Build metadata MUST be ignored when determining
 version precedence. Thus two versions that differ only in the build metadata,
-have the same precedence. Examples: fianl.old.old-alpha+001, final.old.old+20130313144700,
+have the same precedence. Examples: final.old.old-alpha+001, final.old.old+20130313144700,
 final.old.old-beta+exp.sha.5114f85.
 
 1. Precedence refers to how versions are compared to each other when ordered.
